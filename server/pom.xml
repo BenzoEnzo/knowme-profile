@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>pl.benzo.enzo.knowme.profile</groupId>
 	<artifactId>server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.5-DEV</version>
 	<name>server</name>
 	<description>server</description>
 	<properties>
