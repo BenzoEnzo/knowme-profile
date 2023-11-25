@@ -6,7 +6,7 @@ services:
     ports:
       - "8062:8062"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://profiledb:5432/profile
+      SPRING_DATASOURCE_URL: jdbc:postgresql://0.0.0.0:5432/profile
       SPRING_DATASOURCE_USERNAME: profile1
       SPRING_DATASOURCE_PASSWORD: profile2
       SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
