@@ -6,7 +6,7 @@ services:
     ports:
       - "8062:8062"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://0.0.0.0:5432/profiledb
+      SPRING_DATASOURCE_URL: jdbc:postgresql://0.0.0.0:5432/profile
       SPRING_DATASOURCE_USERNAME: profile1
       SPRING_DATASOURCE_PASSWORD: profile2
       SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
@@ -18,11 +18,11 @@ services:
 
   postgres:
     image: postgres:latest
-    container_name: profiledba
+    container_name: profiledb
     environment:
-      POSTGRES_DB: profiledb
-      POSTGRES_USER: 'profile1'
-      POSTGRES_PASSWORD: 'profile2'
+      POSTGRES_DB: profile
+      POSTGRES_USER: profile1
+      POSTGRES_PASSWORD: profile2
     ports:
       - "5432:5432"
     volumes:
