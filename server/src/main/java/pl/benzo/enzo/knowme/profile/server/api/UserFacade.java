@@ -25,7 +25,7 @@ public class UserFacade implements UserApi{
 
     @Override
     public ValidateCrypto validateAccount(SendCrypto sendCrypto) {
-        return userService.validateAccount(sendCrypto);
+        return userService.validateCrypto(sendCrypto);
     }
 
     @Override

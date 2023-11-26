@@ -15,6 +15,6 @@ public interface UserApi {
 
     UpdateUserResponse updateUser(UpdateUserRequest updateUserRequest);
 
-    public User findUser(String crypto);
+    User findUser(String crypto);
 
 }

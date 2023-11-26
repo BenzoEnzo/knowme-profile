@@ -5,7 +5,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import pl.benzo.enzo.knowme.profile.server.api.UserApi;
-import pl.benzo.enzo.knowme.profile.server.api.user.BasicService;
 import pl.benzo.enzo.knowme.profile.server.model.User;
 
 
