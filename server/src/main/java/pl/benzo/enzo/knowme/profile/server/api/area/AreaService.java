@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class AreaService implements AreaApi {
+public class AreaService {
     private static final Logger loggerQueueService = LoggerFactory.getLogger(AreaService.class);
     private final AreaRepository areaRepository;
     private final AreaMapper areaMapper;

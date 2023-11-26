@@ -65,12 +65,7 @@ public class UserController {
                 .body(userApi.findAllUsers());
     }
 
-    @GetMapping(value = "/queue")
-    @ResponseBody
-    public ResponseEntity<?> getRandomPairs(){
-        return ResponseEntity.ok()
-                .body(userApi.getRandomPairs());
-    }
+
 
 
 }

@@ -9,7 +9,7 @@ import pl.benzo.enzo.kmservicedto.socket.ChatSession;
 import java.util.List;
 import java.util.Set;
 
-public interface AreaApi extends FacadeApi {
+public interface AreaApi {
     Set<AreaUserDto> createArea(CreateAreaRequest createAreaRequest);
 
     QueueJoinDto addUserToQueue(AreaUserDto areaUserDto);

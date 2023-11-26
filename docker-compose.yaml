@@ -3,6 +3,7 @@ version: '3.8'
 services:
   knowme-profile:
     image: knowme-profile:latest
+    restart: always
     ports:
       - "8062:8062"
     environment:
@@ -17,6 +18,7 @@ services:
       - postgres-profile
   postgres-profile:
     image: postgres:latest
+    restart: always
     container_name: postgres-profile-co
     environment:
       POSTGRES_USER: "postgres"

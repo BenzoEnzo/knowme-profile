@@ -13,7 +13,7 @@ import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
-public class KeyService implements KeyApi {
+public class KeyService {
     private final KeyRepository keyRepository;
 
     public List<Key> findAllKeys(){

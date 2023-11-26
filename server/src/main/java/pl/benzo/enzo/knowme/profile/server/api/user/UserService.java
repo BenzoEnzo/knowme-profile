@@ -18,7 +18,7 @@ import java.util.Optional;
 
 @Service
 @Slf4j
-public class UserService implements UserApi {
+public class UserService {
     private final UserRepository userRepository;
    private final UserMapper userMapper;
 
@@ -51,7 +51,7 @@ public class UserService implements UserApi {
 
     }
 
-    @Override
+
     public ValidateCrypto validateAccount(SendCrypto sendCrypto) {
         return null;
     }
@@ -90,10 +90,6 @@ public class UserService implements UserApi {
         return userRepository.findUserByCrypto(crypto);
     }
 
-    @Override
-    public ChatSession getRandomPairs() {
-        return null;
-    }
 
     public User findUserById(Long id){
         return userRepository.findById(id).orElseThrow(IllegalArgumentException::new);
@@ -102,4 +98,5 @@ public class UserService implements UserApi {
     public List<User> findAllUsers(){
         return userRepository.findAll();
     }
+
 }

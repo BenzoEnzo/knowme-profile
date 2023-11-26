@@ -54,4 +54,11 @@ private final AreaApi areaApi;
         areaApi.deleteArea(id);
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping(value = "/queue")
+    @ResponseBody
+    public ResponseEntity<?> getRandomPairs(){
+        return ResponseEntity.ok()
+                .body(areaApi.getRandomPairs());
+    }
 }

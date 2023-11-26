@@ -6,7 +6,7 @@ import pl.benzo.enzo.knowme.profile.server.model.User;
 
 import java.util.List;
 
-public interface UserApi extends FacadeApi {
+public interface UserApi {
     SendCrypto generateCrypto();
 
     ReadUserResponse readUser(ReadUserRequest readUserRequest);
@@ -17,5 +17,4 @@ public interface UserApi extends FacadeApi {
 
     public User findUser(String crypto);
 
-    ChatSession getRandomPairs();
 }
