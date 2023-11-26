@@ -1,4 +1,4 @@
-package pl.benzo.enzo.knowme.profile.server.api.controller;
+package pl.benzo.enzo.knowme.profile.server.api.key;
 
 
 import lombok.RequiredArgsConstructor;
