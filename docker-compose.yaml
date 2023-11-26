@@ -19,9 +19,9 @@ services:
     container_name: postgreprofiles
     restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres123
-      - POSTGRES_DB=profile
+     POSTGRES_USER: postgres
+     POSTGRES_PASSWORD: postgres123
+     POSTGRES_DB: profile
     ports:
       - "5432:5432"
     volumes:
