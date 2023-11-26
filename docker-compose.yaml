@@ -2,18 +2,17 @@ version: '3.8'
 
 services:
   knowme-profile-app:
-    image:  knowme-profile:006
+    image:  knowme-profile:0.0.5
     ports:
       - "8062:8062"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgreprofiles:5432/profile
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-profile:5432/profile
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres123
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
       - SPRING_JPA_SHOW_SQL=true
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-
   postgres-profile:
     image: postgres:latest
     container_name: postgreprofiles
