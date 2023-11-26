@@ -6,16 +6,14 @@ services:
     ports:
       - "8062:8062"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://127.0.0.1:5432/profile
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://0.0.0.0:5432/profile
       - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=postgres123
+      - SPRING_DATASOURCE_PASSWORD=
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
       - SPRING_JPA_SHOW_SQL=true
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=create
-    depends_on:
-      - postgres-profile
-
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      -
   postgres-profile:
     image: postgres:latest
     container_name: postgreprofiles
@@ -27,7 +25,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/data
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
